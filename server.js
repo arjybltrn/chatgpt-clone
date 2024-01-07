@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 
-const OPENAI_API_KEY = "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"
+const OPENAI_API_KEY = "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"
 
 app.post('/completions', async (req, res) => {
     const options = {
@@ -19,7 +19,7 @@ app.post('/completions', async (req, res) => {
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [{ role: "user", content: req.body.message}],
-            max_tokens: 100,
+            max_tokens: 50,
         })
     }
     try {
