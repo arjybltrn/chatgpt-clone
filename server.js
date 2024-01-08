@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 
-const OPENAI_API_KEY = "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"
+const OPENAI_API_KEY = "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"
 
 app.post('/completions', async (req, res) => {
     const options = {
